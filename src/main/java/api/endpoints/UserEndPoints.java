@@ -30,7 +30,7 @@ public class UserEndPoints {
 	// Post request
 	public static Response addUser(User payload) {
 		
-		String postRequestUrl = getURL().getString("post_url");
+		String postRequestUrl = getURL().getString("user.posturl");
 		
 		Response response = given()
 			.contentType(ContentType.JSON)
@@ -47,7 +47,7 @@ public class UserEndPoints {
 	// get request
 	public static Response getUser(String userName) {
 		
-		String getRequestUrl = getURL().getString("get_url");
+		String getRequestUrl = getURL().getString("user.geturl");
 		
 		Response response = given()
 			.pathParam("username", userName)
@@ -63,7 +63,7 @@ public class UserEndPoints {
 	// put request
 	public static Response updateUser(String userName, User payload) {
 		
-		String putRequestUrl = getURL().getString("put_url");
+		String putRequestUrl = getURL().getString("user.puturl");
 		
 		Response response = given()
 			.contentType(ContentType.JSON)
@@ -80,7 +80,7 @@ public class UserEndPoints {
 	// delete request
 	public static Response deleteUser(String userName) {
 		
-		String deleteRequestUrl = getURL().getString("delete_url");
+		String deleteRequestUrl = getURL().getString("user.deleteurl");
 		
 		Response response = given()
 			.pathParam("username", userName)
