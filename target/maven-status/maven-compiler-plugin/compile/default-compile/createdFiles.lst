@@ -1,4 +1,7 @@
+api\payload\Pet.class
+api\endpoints\StoreEndPoints.class
+api\utilities\ExtentReportManager.class
 api\endpoints\UserEndPoints.class
+api\payload\Store.class
 api\payload\User.class
 api\utilities\ListenerClass.class
-api\utilities\ExtentReportManager.class

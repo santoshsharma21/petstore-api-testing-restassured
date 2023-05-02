@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,7 +108,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.StoreTests" class="method navigator-link" hash-for-method="Test_addUser">Test_addUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.StoreTests" class="method navigator-link" hash-for-method="Test_deleteOrder">Test_deleteOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="api.testcases.UserTests" class="method navigator-link" hash-for-method="Test_deleteUser">Test_deleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.StoreTests" class="method navigator-link" hash-for-method="Test_getPetInventory">Test_getPetInventory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.StoreTests" class="method navigator-link" hash-for-method="Test_getPetOrder">Test_getPetOrder</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,6 +153,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.testcases.StoreTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_addUser">
+                  </a> <!-- Test_addUser -->
+                  <span class="method-name">Test_addUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_deleteOrder">
+                  </a> <!-- Test_deleteOrder -->
+                  <span class="method-name">Test_deleteOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_getPetInventory">
+                  </a> <!-- Test_getPetInventory -->
+                  <span class="method-name">Test_getPetInventory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_getPetOrder">
+                  </a> <!-- Test_getPetOrder -->
+                  <span class="method-name">Test_getPetOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -182,11 +238,16 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;api.utilities.ListenerClass&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;User-Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;api.testcases.UserTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- User-Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Store-Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;api.testcases.StoreTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Store-Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,7 +259,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">User-Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Store-Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -224,28 +288,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Test_addUser')
 data.setCell(0, 2, 'api.testcases.UserTests')
-data.setCell(0, 3, 4445);
+data.setCell(0, 3, 5593);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Test_getUser')
 data.setCell(1, 2, 'api.testcases.UserTests')
-data.setCell(1, 3, 1356);
+data.setCell(1, 3, 1214);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Test_deleteUser')
-data.setCell(2, 2, 'api.testcases.UserTests')
-data.setCell(2, 3, 1332);
+data.setCell(2, 1, 'Test_deleteOrder')
+data.setCell(2, 2, 'api.testcases.StoreTests')
+data.setCell(2, 3, 1182);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Test_updateUser')
-data.setCell(3, 2, 'api.testcases.UserTests')
-data.setCell(3, 3, 1274);
+data.setCell(3, 1, 'Test_getPetInventory')
+data.setCell(3, 2, 'api.testcases.StoreTests')
+data.setCell(3, 3, 1166);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Test_getPetOrder')
+data.setCell(4, 2, 'api.testcases.StoreTests')
+data.setCell(4, 3, 1112);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Test_deleteUser')
+data.setCell(5, 2, 'api.testcases.UserTests')
+data.setCell(5, 3, 1111);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Test_addUser')
+data.setCell(6, 2, 'api.testcases.StoreTests')
+data.setCell(6, 3, 1106);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Test_updateUser')
+data.setCell(7, 2, 'api.testcases.UserTests')
+data.setCell(7, 3, 1066);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -276,29 +356,72 @@ return data;
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.testcases.StoreTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">943 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.testcases.UserTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setPayload</span>
-                <span class="method-start">660 ms</span>
+                <span class="method-start">1019 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Test_addUser</span>
-                <span class="method-start">1061 ms</span>
+                <span class="method-start">1631 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_getUser</span>
-                <span class="method-start">5532 ms</span>
+                <span class="method-start">7275 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_updateUser</span>
-                <span class="method-start">6900 ms</span>
+                <span class="method-start">8493 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test_deleteUser</span>
-                <span class="method-start">8181 ms</span>
+                <span class="method-start">9563 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.testcases.StoreTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setStorePayload</span>
+                <span class="method-start">10750 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Test_addUser</span>
+                <span class="method-start">10755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_getPetOrder</span>
+                <span class="method-start">11878 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_deleteOrder</span>
+                <span class="method-start">12994 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_getPetInventory</span>
+                <span class="method-start">14180 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.testcases.UserTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">9565 ms</span>
+                <span class="method-start">15363 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.testcases.StoreTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">16978 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

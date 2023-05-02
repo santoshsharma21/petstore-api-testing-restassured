@@ -1,41 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-30T23:57:16 IST" name="Suite" finished-at="2023-04-30T23:57:24 IST" duration-ms="8336">
+  <suite started-at="2023-05-02T18:26:10 IST" name="Suite" finished-at="2023-05-02T18:26:26 IST" duration-ms="15812">
     <groups>
     </groups>
-    <test started-at="2023-04-30T23:57:16 IST" name="Test" finished-at="2023-04-30T23:57:24 IST" duration-ms="8336">
+    <test started-at="2023-05-02T18:26:10 IST" name="User-Test" finished-at="2023-05-02T18:26:21 IST" duration-ms="10466">
       <class name="api.testcases.UserTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:api.testcases.UserTests@28eaa59a]" started-at="2023-04-30T23:57:15 IST" name="beforeSuite" finished-at="2023-04-30T23:57:16 IST" duration-ms="483" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setPayload()[pri:0, instance:api.testcases.UserTests@28eaa59a]" started-at="2023-04-30T23:57:16 IST" name="setPayload" finished-at="2023-04-30T23:57:16 IST" duration-ms="415" status="PASS">
+        <test-method is-config="true" signature="setPayload()[pri:0, instance:api.testcases.UserTests@31c88ec8]" started-at="2023-05-02T18:26:10 IST" name="setPayload" finished-at="2023-05-02T18:26:11 IST" duration-ms="955" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPayload -->
-        <test-method signature="Test_addUser()[pri:0, instance:api.testcases.UserTests@28eaa59a]" started-at="2023-04-30T23:57:16 IST" name="Test_addUser" finished-at="2023-04-30T23:57:21 IST" duration-ms="4444" status="PASS">
+        <test-method signature="Test_addUser()[pri:0, instance:api.testcases.UserTests@31c88ec8]" started-at="2023-05-02T18:26:11 IST" name="Test_addUser" finished-at="2023-05-02T18:26:16 IST" duration-ms="4816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_addUser -->
-        <test-method signature="Test_getUser()[pri:1, instance:api.testcases.UserTests@28eaa59a]" started-at="2023-04-30T23:57:21 IST" name="Test_getUser" finished-at="2023-04-30T23:57:22 IST" duration-ms="1108" status="PASS">
+        <test-method signature="Test_getUser()[pri:1, instance:api.testcases.UserTests@31c88ec8]" started-at="2023-05-02T18:26:16 IST" name="Test_getUser" finished-at="2023-05-02T18:26:18 IST" duration-ms="1302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_getUser -->
-        <test-method signature="Test_updateUser()[pri:2, instance:api.testcases.UserTests@28eaa59a]" started-at="2023-04-30T23:57:22 IST" name="Test_updateUser" finished-at="2023-04-30T23:57:23 IST" duration-ms="1138" status="PASS">
+        <test-method signature="Test_updateUser()[pri:2, instance:api.testcases.UserTests@31c88ec8]" started-at="2023-05-02T18:26:18 IST" name="Test_updateUser" finished-at="2023-05-02T18:26:19 IST" duration-ms="1359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_updateUser -->
-        <test-method signature="Test_deleteUser()[pri:3, instance:api.testcases.UserTests@28eaa59a]" started-at="2023-04-30T23:57:23 IST" name="Test_deleteUser" finished-at="2023-04-30T23:57:24 IST" duration-ms="1133" status="PASS">
+        <test-method signature="Test_deleteUser()[pri:3, instance:api.testcases.UserTests@31c88ec8]" started-at="2023-05-02T18:26:19 IST" name="Test_deleteUser" finished-at="2023-05-02T18:26:20 IST" duration-ms="1331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_deleteUser -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:api.testcases.UserTests@28eaa59a]" started-at="2023-04-30T23:57:24 IST" name="afterSuite" finished-at="2023-04-30T23:57:25 IST" duration-ms="554" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:api.testcases.UserTests@31c88ec8]" started-at="2023-05-02T18:26:20 IST" name="afterSuite" finished-at="2023-05-02T18:26:21 IST" duration-ms="604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- api.testcases.UserTests -->
-    </test> <!-- Test -->
+    </test> <!-- User-Test -->
+    <test started-at="2023-05-02T18:26:21 IST" name="Store-Test" finished-at="2023-05-02T18:26:26 IST" duration-ms="5305">
+      <class name="api.testcases.StoreTests">
+        <test-method is-config="true" signature="setStorePayload()[pri:0, instance:api.testcases.StoreTests@1a451d4d]" started-at="2023-05-02T18:26:21 IST" name="setStorePayload" finished-at="2023-05-02T18:26:21 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setStorePayload -->
+        <test-method signature="Test_OrderPet()[pri:0, instance:api.testcases.StoreTests@1a451d4d]" started-at="2023-05-02T18:26:21 IST" name="Test_OrderPet" finished-at="2023-05-02T18:26:22 IST" duration-ms="1281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_OrderPet -->
+        <test-method signature="Test_getPetOrder()[pri:1, instance:api.testcases.StoreTests@1a451d4d]" started-at="2023-05-02T18:26:22 IST" name="Test_getPetOrder" finished-at="2023-05-02T18:26:23 IST" duration-ms="1286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_getPetOrder -->
+        <test-method signature="Test_deleteOrder()[pri:2, instance:api.testcases.StoreTests@1a451d4d]" started-at="2023-05-02T18:26:23 IST" name="Test_deleteOrder" finished-at="2023-05-02T18:26:25 IST" duration-ms="1262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_deleteOrder -->
+        <test-method signature="Test_getPetInventory()[pri:3, instance:api.testcases.StoreTests@1a451d4d]" started-at="2023-05-02T18:26:25 IST" name="Test_getPetInventory" finished-at="2023-05-02T18:26:26 IST" duration-ms="1261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_getPetInventory -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:api.testcases.StoreTests@1a451d4d]" started-at="2023-05-02T18:26:26 IST" name="afterSuite" finished-at="2023-05-02T18:26:26 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- api.testcases.StoreTests -->
+    </test> <!-- Store-Test -->
   </suite> <!-- Suite -->
 </testng-results>

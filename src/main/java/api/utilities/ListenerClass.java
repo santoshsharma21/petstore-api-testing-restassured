@@ -24,20 +24,21 @@ public class ListenerClass extends ExtentReportManager implements ITestListener 
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		if(result.getStatus() == ITestResult.SUCCESS) {
+		if (result.getStatus() == ITestResult.SUCCESS) {
 			testlog.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " - PASSED", ExtentColor.GREEN));
 		}
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		if(result.getStatus() == ITestResult.FAILURE) {
-			
+		if (result.getStatus() == ITestResult.FAILURE) {
+
 			try {
-				
+
 				testlog.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - FAILED", ExtentColor.RED));
-				testlog.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable()+ " - FAILED", ExtentColor.RED));
-			} catch(Exception e) {
+				testlog.log(Status.FAIL,
+						MarkupHelper.createLabel(result.getThrowable() + " - FAILED", ExtentColor.RED));
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
@@ -45,11 +46,9 @@ public class ListenerClass extends ExtentReportManager implements ITestListener 
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		if(result.getStatus() == ITestResult.SKIP) {
+		if (result.getStatus() == ITestResult.SKIP) {
 			testlog.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - SKIPED", ExtentColor.YELLOW));
 		}
 	}
-	
-	
 
 }
